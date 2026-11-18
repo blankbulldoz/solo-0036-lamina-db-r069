@@ -7,3 +7,6 @@
 *secret*
 *.key
 *.pem
+/capacity/tmp/
+__pycache__/
+*.pyc

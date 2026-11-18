@@ -1,0 +1,36 @@
+===== batch=1 =====
+Dropped 134 nodes (cum <= 82.71kB)
+Showing top 10 nodes out of 20
+      flat  flat%   sum%        cum   cum%
+ 6703.89kB 40.53% 40.53%  6703.89kB 40.53%  lamina/internal/datum.Clone (inline)
+ 6703.12kB 40.52% 81.05%  6703.12kB 40.52%  lamina/internal/catalog.Relation.Normalize
+    1304kB  7.88% 88.93%  1324.75kB  8.01%  lamina/internal/journal.(*WAL).Append
+  515.62kB  3.12% 92.05%  8948.59kB 54.10%  lamina/internal/engine.(*DB).Commit
+  422.42kB  2.55% 94.60%  7125.55kB 43.08%  lamina/internal/versions.(*Store).Apply (inline)
+  343.75kB  2.08% 96.68%   343.75kB  2.08%  encoding/hex.EncodeToString
+  257.81kB  1.56% 98.24%   257.81kB  1.56%  main.bandText
+
+===== batch=50 =====
+Dropped 136 nodes (cum <= 59.48kB)
+Showing top 10 nodes out of 18
+      flat  flat%   sum%        cum   cum%
+ 5180.28kB 43.55% 43.55%  5180.28kB 43.55%  lamina/internal/datum.Clone (inline)
+ 5179.08kB 43.54% 87.09%  5179.08kB 43.54%  lamina/internal/catalog.Relation.Normalize
+  668.50kB  5.62% 92.71%  6264.13kB 52.66%  lamina/internal/engine.(*DB).Commit
+  381.95kB  3.21% 95.92%  5561.03kB 46.75%  lamina/internal/versions.(*Store).Apply (inline)
+  199.20kB  1.67% 97.59%   199.20kB  1.67%  main.bandText
+  131.42kB  1.10% 98.70%   131.42kB  1.10%  lamina/internal/datum.Value.MarshalJSON
+   68.41kB  0.58% 99.27%    68.45kB  0.58%  runtime.mallocgc
+
+===== batch=500 =====
+Dropped 112 nodes (cum <= 26.43kB)
+Showing top 10 nodes out of 34
+      flat  flat%   sum%        cum   cum%
+ 2290.30kB 43.32% 43.32%  2290.30kB 43.32%  lamina/internal/datum.Clone (inline)
+ 2289.42kB 43.30% 86.63%  2289.42kB 43.30%  lamina/internal/catalog.Relation.Normalize
+     224kB  4.24% 90.86%  2737.87kB 51.79%  lamina/internal/engine.(*DB).Commit
+  218.11kB  4.13% 94.99%  2507.53kB 47.43%  lamina/internal/versions.(*Store).Apply (inline)
+   88.05kB  1.67% 96.65%    88.05kB  1.67%  main.bandText
+      66kB  1.25% 97.90%    66.05kB  1.25%  runtime.mallocgc
+   57.66kB  1.09% 98.99%    57.66kB  1.09%  lamina/internal/datum.Value.MarshalJSON
+
